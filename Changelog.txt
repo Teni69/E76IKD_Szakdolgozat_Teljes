@@ -1,0 +1,163 @@
+Commits on Mar 29, 2022
+Start screens, AI additions
+
+- Added a start menu scene
+- Added a description and tutorial scene
+- AI medic follows the wounded
+- AI fighters will follow the player in range and patrolling if not in range
+@Teni69
+Teni69 committed 19 days ago
+ 
+Commits on Nov 4, 2021
+Enemy interactions 
+
+- Enemy buildings
+- Enemy healer, miner scripts
+- On play, an enemy miner goes to mine crytals
+- Enemy instantiation methods completed
+
+TODO: Minimalistic enemy fight scripts, like use the teleport and go for the player, spawn units by the currency it has, defend the attacked unit
+@Teni69
+Teni69 committed on Nov 4 2021
+ 
+Commits on Nov 3, 2021
+Left UI Panel 
+
+- Click through fixed
+@Teni69
+Teni69 committed on Nov 3 2021
+ 
+Information UI, Bugfix 
+
+- Added an Information panel on the left side, which shows the name, hp, dmg and state of the selected object
+
+Bugfix:
+- Now we cant click through the right UI (Forgot to test the left one)
+@Teni69
+Teni69 committed on Nov 3 2021
+ 
+Commits on Oct 29, 2021
+Bugfixes, Turret, Medic, Miner, Currency 
+
+Added:
+  -Turret activation from generator energy
+  - Medic heals the most wounded ally
+  - Miner makes currency by being close enough to the crystals
+  - Currency and energy UI
+
+Bugfix: Lots of reference errors got solved
+@Teni69
+Teni69 committed on Oct 29 2021
+
+Fight System, HP Bar 
+
+ Units and building are now capable of having unique hp
+Added colliders and rigidbodies, for detection:
+  + Units are automatically targeting enemies
+  + Enemies are automatically targeting the Player units, and buildings
+Hp bar only active when the unit is selected or in combat.
+
+TODO:
+- After unit death, error occurs
+- Make units unique by the attack range, and attack damage, health
+- Move to targeted enemy's position after right click (Maybe follow him)
+- Attack animation?
+- Building hp bar height need adjustment
+@Teni69
+Teni69 committed on Oct 22 2021
+ 
+Commits on Oct 20, 2021
+Hp bar added 
+
+- Spritesheet made from 100 sprites
+- Hp bar will be shown for the selected units only
+- Dinamically changes sprites by the amount of hp remains
+- Hp bar follows the unit, and rotates with the camera
+
+TODO: Fighting system tomorrow with collision detection
+@Teni69
+Teni69 committed on Oct 20 2021
+ 
+Commits on Oct 16, 2021
+Bugfix (Selection, Unit spawn) 
+
+- Offmeshlinks are all set
+- Units are now moving to desired places perfectly
+- Selection bug fixed, only the selected units are going to the wanted locations
+- Barrack is now spawning the desired number of troops, no multiplications
+
+TODO: Terrain, Building Purposes, Unit Attributes, Fight system, Currency
+@Teni69
+Teni69 committed on Oct 16 2021
+ 
+Commits on Oct 15, 2021
+Unit movement, Buildings, Navmesh, Offmeshlink, Terrain 
+
+- Unit movement on navmeshes works perfectly
+- Added tons of offmeshlinks to the navmeshes, now the whole planet can be explored
+- Added minimalistic terrain for design
+- Added main base, barracks, generator
+- Barracks can make 3 types of units:
+---Melee
+---Ranged
+---Medic
+
+TODO:
+-Unit actions
+-Building purposes
+-Healths
+-Currency to train and repair
+
+BUG:
+-Sometimes not only the selected units move to the desired point. (MovementManager script)
+@Teni69
+Teni69 committed on Oct 15 2021
+ 
+Commits on Sep 11, 2021
+Box selection 
+
+- Added box selection
+- Units are moving by selection, independently
+- selection color sometimes bugged
+@Teni69
+Teni69 committed on Sep 11 2021
+ 
+Commits on Aug 28, 2021
+Navmesh-NavAgent addition 
+
+-Recreated movement with Navagent
+-Basic Navmesh for the empty terrain
+-Collision, movement works flawlessly
+TODO: Multiple unit movement, Game mechanics
+@Teni69
+Teni69 committed on Aug 28 2021
+ 
+Commits on Feb 4, 2021
+Planet + Controls 
+
+Planet terrain:
+- Custom mesh
+- Custom mesh collider
+Controls:
+- Changed transform.position to RigidBody movePosition, in this way the unit moves way smoother and won't go inside the terrain
+@Teni69
+Teni69 committed on Feb 4 2021
+ 
+Kamera zoom, Polybrush 
+
+- Kamera bugfix: Korlátolt zoom
+- Polybrush hozzáadva a bolygó formázáshoz
+@Teni69
+Teni69 committed on Feb 4 2021
+ 
+Commits on Nov 17, 2020
+Movement, Cameras, Planets 
+
+- Basic playfield
+- Cameramovement around planets, map view
+- Moveable object on 3D surface by rayCast
+
+BUG: moving object bounces on arrival
+TODO: Planet with terrain (navMesh?)
+@Teni69
+Teni69 committed on Nov 17 202
